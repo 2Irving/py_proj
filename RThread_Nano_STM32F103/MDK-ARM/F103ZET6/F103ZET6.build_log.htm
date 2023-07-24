@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jie jie, d, LIC=PE7DL-0FA44-DYZV3-AN2CN-3YTSV-GBV1Q
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  D:\keil1\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\Users\44780\Desktop\F103ZET6_RT_NANO\MDK-ARM\F103ZET6.uvprojx
+Project File Date:  07/06/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil1\ARM\ARMCC\Bin'
+Build target 'F103ZET6'
+compiling main.c...
+linking...
+Program Size: Code=9088 RO-data=684 RW-data=176 ZI-data=17728  
+FromELF: creating hex file...
+"F103ZET6\F103ZET6.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: RealThread
+                https://www.rt-thread.org/download/mdk/RealThread.RT-Thread.3.1.5.pack
+                RealThread.RT-Thread.3.1.5
+                RT-Thread Software Components
+   * Component: kernel Version: 3.1.5
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\RTOS
+  .\RTE\_F103ZET6
+  D:\keil1\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\keil1\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+  D:\keil1\RealThread\RT-Thread\3.1.5\include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+
+   * Component: RealThread.RT-Thread::RTOS:kernel:3.1.5
+      Source file:   src\irq.c
+      Source file:   src\object.c
+      Source file:   libcpu\arm\cortex-m3\cpuport.c
+      Source file:   bsp\_template\board.c
+      Source file:   src\components.c
+      Source file:   src\idle.c
+      Source file:   libcpu\arm\cortex-m3\context_rvds.S
+      Source file:   src\mempool.c
+      Include file:  bsp\_template\rtconfig.h
+      Source file:   src\clock.c
+      Source file:   src\kservice.c
+      Source file:   src\mem.c
+      Source file:   src\scheduler.c
+      Source file:   src\thread.c
+      Source file:   src\ipc.c
+      Source file:   src\timer.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
