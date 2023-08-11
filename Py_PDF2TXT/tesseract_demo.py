@@ -5,6 +5,6 @@
 # @FileName :example
 import pytesseract
 
-img_path = "../imgs/page_4.PNG"
-result = pytesseract.image_to_string(image=img_path,lang="chi_sim",config="--psm 1")   #路径；语言；配置
+img_path = "./Demo.PNG"
+result = pytesseract.image_to_string(image=img_path,lang="eng",config="--psm 1")   #路径；语言；配置
 print(result)
