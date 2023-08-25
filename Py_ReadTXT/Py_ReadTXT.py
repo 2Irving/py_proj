@@ -1,5 +1,7 @@
-import msvcrt
 import json
+import time
+import keyboard
+
 TXTPath = './KSLSH1.txt'
 NotePath ='./BookNote.json'
 #打开并且读取json数据
@@ -29,30 +31,31 @@ else:
 
 print(lines[i])
 while(1):
-    if msvcrt.kbhit():
-        #判断ESC
-        if msvcrt.getch() != b'\x1b':
-            #skip all empty line
-            while(i<len(lines)-1):
-                if(lines[i]!='\n'):
-                    break
-                else:
-                    i += 1 
-
+    if keyboard.is_pressed(' ') or keyboard.is_pressed('up'):
+        time.sleep(0.2)
+        #skip all empty line                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        while(i<len(lines)-1):
             if(lines[i]!='\n'):
-                print(lines[i])
-                params["Note_Line"] = i
-                i += 1
+                break
             else:
-                print("END PAGE")
-                params["Note_Line"] = 1
-                write_json(NotePath,params)
-                print("note start line OK")
-                break   
+                i += 1 
+
+        if(i<len(lines)-1):
+            print(lines[i])
+            params["Note_Line"] = i
+            i += 1
+            #keyboard.wait()
         else:
-            #note line to json 
+            print("END PAGE")
+            params["Note_Line"] = 1
             write_json(NotePath,params)
-            print("note line "+str(i-1)+" OK ")
-            break;
+            print("note start line OK")
+            break   
+
+    elif keyboard.is_pressed('esc'):
+        #note line to json 
+        write_json(NotePath,params)
+        print("note line "+str(i-1)+" OK ")
+        break;
 #json文件保存数据    
     
