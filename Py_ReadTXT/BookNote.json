@@ -1,4 +1,12 @@
 {
-  "Book_Name": "KSLSH1.txt",
-  "Note_Line": 769
+  "Books": [
+    {
+      "Book_Name": "KSLSH1.txt",
+      "Note_Line": 844
+    },
+    {
+      "Book_Name": "RLJS.txt",
+      "Note_Line": 66
+    }
+  ]
 }
