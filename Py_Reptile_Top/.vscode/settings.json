@@ -2,6 +2,7 @@
     "files.associations": {
         "compare": "c",
         "air_bafalu_btc501a.h": "c",
-        "fresh_toshiba_dxf_60c001.h": "c"
+        "fresh_toshiba_dxf_60c001.h": "c",
+        "stdlib.h": "c"
     }
 }

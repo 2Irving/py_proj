@@ -72,9 +72,9 @@ def Select_module(topic_Name):
     return node
 
 '''
-    zhihu   github  weibo    sspai 
+    github  zhihu   sspai   ithome     
     
-    ithome  36ke    smzdm    52pojie
+    weibo   36ke    smzdm    52pojie
 '''
 if __name__=='__main__':
     while(1):
