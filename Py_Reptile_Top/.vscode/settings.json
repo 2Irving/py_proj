@@ -3,6 +3,9 @@
         "compare": "c",
         "air_bafalu_btc501a.h": "c",
         "fresh_toshiba_dxf_60c001.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "air_intesis_samsung.h": "c",
+        "Protocol_IT1.C": "cpp",
+        "air_trane_kh223_230926.h": "c"
     }
 }
